@@ -13,7 +13,7 @@ class Controller
             ob_start();
             extract($data);
             require $path;
-            $tmp =  ob_get_clean();
+            $tmp = ob_get_clean();
             echo $this->defaultTemplate(['content' => $tmp]);
         }
     }
