@@ -6,8 +6,8 @@ use Dotenv\Dotenv;
 
 class App
 {
-    protected $controllerName = 'main'; //class (по умолчанию)
-    protected $method = "index";        //method (по умолчанию)
+    protected $controllerName = 'main';
+    protected $method = "index";
     protected $params = [];
 
     public function __construct()

@@ -2,12 +2,3 @@
     margin: 0;
     padding: 0;
 }
-body, html{
-    background-color: #4e555b !important;
-    text-align: center !important;
-}
-a{
-    font-size: 2em;
-    margin-right: 2em;
-    color: white !important;
-}
