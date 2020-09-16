@@ -34,7 +34,7 @@ class App
     {
         $controllerName = 'Controllers\\' . ucfirst($this->controllerName) . 'Controller';
         $controller = new $controllerName();
-        call_user_func_array([$controller, $this->method], []);
+        call_user_func_array([$controller, 'error'], []);
     }
 
     public function parseUrl()
