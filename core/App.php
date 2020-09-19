@@ -12,6 +12,7 @@ class App
 
     public function __construct()
     {
+        session_start();
         $this->setUpConfigs();
         $this->parseUrl();
         $controllerName = 'Controllers\\' . ucfirst($this->params[0]) . 'Controller';
