@@ -2,3 +2,37 @@
     margin: 0;
     padding: 0;
 }
+header{
+    display: flex;
+    color: white;
+    background: navy;
+    justify-content: space-around;
+
+}
+header a {
+    color: white;
+}
+header>*{
+    display:  flex;
+    align-items: center;
+}
+main{
+    border: 1px solid navy;
+    margin: 1vw;
+}
+main>*{
+    border: 1px solid navy;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    background: cornsilk;
+}
+main>*>*{
+    flex-basis: 200px;
+    margin: 1vw;
+
+}
+img{
+    width: 50px;
+    border: 1px solid slateblue;
+}

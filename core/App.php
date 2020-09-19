@@ -20,9 +20,9 @@ class App
             $controller = new $controllerName();
             $method = $this->params[1] ?? $this->method;
             if (method_exists($controller, $method)) {
-                call_user_func_array([$controller, $method], $this->params);
+                call_user_func_array([$controller, $method], $this->params) ;
             } elseif (method_exists($controller, $this->method)) {
-                call_user_func_array([$controller, $this->method], $this->params);
+                call_user_func_array([$controller, $this->method], $this->params[]);
             } else {
                 $this->error404();
             }
