@@ -13,10 +13,10 @@
 </body>
 </html>
 <?php
-session_start();
+/*session_start();
 
 foreach ($_SESSION['friends'] as $friend){
    echo $friend['last_name'] . ' ' . $friend['first_name'] . '<br>';
 
-}
+}*/
 

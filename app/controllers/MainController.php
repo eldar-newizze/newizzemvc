@@ -11,5 +11,6 @@ class MainController extends Controller
     {
 
         $this->view('main/index', []);
+        echo "t";
     }
 }
