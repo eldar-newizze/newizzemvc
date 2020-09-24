@@ -19,6 +19,7 @@ class DB
 
     private static function getData()
     {
+        echo 'df';
         $host = env('DB_HOST');
         $db   = env('DB_DATABASE');
         $user = env('DB_USERNAME');
