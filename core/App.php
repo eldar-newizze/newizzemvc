@@ -14,7 +14,7 @@ class App
     {
         $this->setUpConfigs();
         $this->parseUrl();
-        $controllerName = 'Controllers\\' . ucfirst($this->params[0]) . 'Controller';
+        $controllerName = 'Controllers\\' . $this->getControllerName($this->params[0]) . 'Controller';
 
         if (class_exists($controllerName)) {
             $controller = new $controllerName();
@@ -37,6 +37,21 @@ class App
         call_user_func_array([$controller, $this->method], []);
     }
 
+    public function getControllerName($controllerName)
+    {
+        $pos = strpos($controllerName, '-');
+        if ($pos === false) {
+            return ucfirst($controllerName);
+        } else {
+            $arr = explode('-', $controllerName);
+            $newName = '';
+            foreach ($arr as $s) {
+                $newName .= ucfirst($s);
+            }
+            return $newName;
+        }
+    }
+
     public function parseUrl()
     {
         if (isset($_GET['url'])) {
@@ -50,5 +65,6 @@ class App
     {
         $dotenv = Dotenv::createImmutable(__DIR__, '../.env');
         $dotenv->load();
+        \Core\DB::connect();
     }
 }

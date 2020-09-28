@@ -7,11 +7,13 @@
         }
     ],
     "require": {
-        "vlucas/phpdotenv": "^5.1"
+        "vlucas/phpdotenv": "^5.1",
+        "gabordemooij/redbean": "dev-master",
+        "ticketpark/saferpay-json-api": "^3.1"
     },
     "autoload": {
         "files": [
-            "app/Helpers/helpers.php"
+            "app/helpers/helpers.php"
         ],
         "psr-4": {
             "Core\\": "core/",

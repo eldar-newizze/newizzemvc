@@ -8,6 +8,6 @@
 $ git clone git@github.com:eldar-newizze/newizzemvc.git
 $ composer install
 $ composer dumpautoload
-$ cp .env.example .env
+$ copy .env.example .env
 # в файле .env указать свои параметры бд и сайта
 ```
