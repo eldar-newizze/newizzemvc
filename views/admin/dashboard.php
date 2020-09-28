@@ -6,9 +6,9 @@
             <div class="leftside-navigation">
                 <ul class="sidebar-menu" id="nav-accordion">
                     <li>
-                        <a class="active" href="index.html">
+                        <a class="active" href="pay/do_pay">
                             <i class="fa fa-dashboard"></i>
-                            <span>Dashboard</span>
+                            <span>My little PayPal</span>
                         </a>
                     </li>
 
@@ -92,7 +92,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="login.html">
+                        <a href="index.php">
                             <i class="fa fa-user"></i>
                             <span>Login Page</span>
                         </a>

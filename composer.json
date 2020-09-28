@@ -8,7 +8,8 @@
     ],
     "require": {
         "vlucas/phpdotenv": "^5.1",
-        "gabordemooij/redbean": "dev-master"
+        "gabordemooij/redbean": "dev-master",
+        "ticketpark/saferpay-json-api": "^3.1"
     },
     "autoload": {
         "files": [

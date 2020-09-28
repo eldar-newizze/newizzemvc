@@ -1,1 +1,1 @@
-<h2>Hello world!</h2>
+<meta http-equiv="refresh" content="0;URL=AdminAuth/login" />
